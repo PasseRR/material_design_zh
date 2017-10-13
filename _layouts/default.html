@@ -14,7 +14,9 @@
     </body>
 <script>
     // 目录显示
-    $('.vertical.sidebar').sidebar('dimPage', false).sidebar('show');
+    $('.vertical.sidebar').sidebar('setting', {
+        dimPage: false
+    }).sidebar('show');
     // 目录搜索
 //    $('.ui.search').search();
     $('.ui.accordion').accordion({
