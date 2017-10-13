@@ -9,18 +9,16 @@ url: "http://www.xiehai.win/material_design_zh"
 exclude: ["SOURCE", "script", "Gemfile", "Gemfile.lock","epub_tmp","ebooks"]
 
 # Build settings
-markdown: kramdown
+highlighter: rouge
 permalink: pretty
+
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - strikethrough
 gems:
-  - jekyll-sitemap
-kramdown:
-  input: GFM
-sitemap:
-  file: "/sitemap.xml"
-  exclude:
-      - "/atom.xml"
-      - "/feed.xml"
-      - "/feed/index.xml"
-  include_posts:
-      - "/index.html"
+  - redcarpet
+
 
