@@ -1,0 +1,14 @@
+java:
+  url:
+  children:
+    - lang:
+      - Thread:
+    - util:
+      - concurrent:
+        - atomic:
+        - BlockingQueue:
+          - ArrayBlockingQueue:
+          - LinkedBlockingQueue:
+          - DelayQueue:
+          - PriorityBlockingQueue:
+          - SynchronousQueue:
