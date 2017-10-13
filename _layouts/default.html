@@ -2,13 +2,15 @@
 <html>
     {% include head.html %}
     <body>
-    {% include header.html %}
-    <div class="page-content">
-      <div class="wrap">
-          {{ content }}
-      </div>
-    </div>
-    {% include footer.html %}
+        <div class="pusher">
+            {% include header.html %}
+            <div class="page-content">
+                <div class="wrap">
+                    {{ content }}
+                </div>
+            </div>
+            {% include footer.html %}
+        </div>
     </body>
 <script>
     // 目录显示
