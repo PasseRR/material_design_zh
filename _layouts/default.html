@@ -14,9 +14,11 @@
     </body>
 <script>
     // 目录显示
-    $('.vertical.sidebar').sidebar('setting', {
-        dimPage: false
-    }).sidebar('show');
+    $(function(){
+        $("#summary").treemenu({delay: 200}).openActive();
+    });
+    $('.vertical.sidebar').sidebar('setting', {dimPage: false})
+            .sidebar('show');
     // 目录搜索
 //    $('.ui.search').search();
     $('.ui.accordion').accordion({
