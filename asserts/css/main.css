@@ -826,8 +826,6 @@ li.tree-opened > .toggler:before {
 
 .tree {
     color: #46CFB0;
-    width: 800px;
-    margin: 100px auto;
 }
 
 .tree li,
@@ -838,7 +836,6 @@ li.tree-opened > .toggler:before {
 }
 
 .tree li a {
-    color: #46CFB0;
     text-decoration: none;
     line-height: 20pt;
     border-radius: 4px;
