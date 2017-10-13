@@ -6,65 +6,42 @@
         </div>
     </div>
     <div class="item">
-        <div class="ui accordion">
-            <div class="title">
-                <i class="dropdown icon"></i>
-                <a href="#">java</a>
-            </div>
-            <div class="content">
-                <div class="title">
-                    <i class="dropdown icon"></i>
-                    <a href="#">lang</a>
-                </div>
-                <div class="content">
-                    <a href="#">Thread</a>
-                </div>
+        <ul class="tree">
+            <li><a href="">Home</a></li>
+            <li><span>Category</span>
+                <ul>
+                    <li><a href="#">jQuery</a>
+                        <ul>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">jQuery UI</a></li>
+                            <li><a href="#">jQuery Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">JavaScript</a>
+                        <ul>
+                            <li><a class="active" href="#">AngularJS</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Backbone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#suits">Golang</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About</a>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a>
+                        <ul>
+                            <li><a href="#jobs1">Job 1</a></li>
+                            <li><a href="#jobs2">Job 2</a></li>
+                            <li><a href="#jobs3">Job 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-                <div class="title">
-                    <i class="dropdown icon"></i>
-                    <a href="#">util</a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        <a href="#">concurrent</a>
-                    </div>
-                    <div class="content">
-                        <div class="title">
-                            <i class="dropdown icon"></i>
-                            <a href="#">atomic</a>
-                        </div>
-                        <div class="content">
-                            <a href="#">AtomicInteger</a>
-                        </div>
-
-                        <div class="title">
-                            <i class="dropdown icon"></i>
-                            <a href="#">BlockingQueue</a>
-                        </div>
-                        <div class="content">
-                            <a href="#">ArrayBlockingQueue</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="title">
-                <i class="dropdown icon"></i>
-                <a href="#">javax</a>
-            </div>
-            <div class="accordion transition hidden">
-                <a href="#">test</a>
-            </div>
-
-            <div class="title">
-                <i class="dropdown icon"></i>
-                <a href="#">sun</a>
-            </div>
-            <div class="accordion transition hidden">
-                <a href="#">test</a>
-            </div>
-        </div>
     </div>
     <!--<div class="item">-->
     <!--<b>Components</b>-->
