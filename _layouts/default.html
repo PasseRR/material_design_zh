@@ -11,6 +11,15 @@
     {% include footer.html %}
     </body>
 <script>
+    // 目录显示
     $('.vertical.sidebar').sidebar('show');
+    // 目录搜索
+//    $('.ui.search').search();
+    $('.ui.accordion').accordion({
+        exclusive: false,
+        selector: {
+            trigger: '.title .icon'
+        }
+    });
 </script>
 </html>
