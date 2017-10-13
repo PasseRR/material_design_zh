@@ -2,17 +2,15 @@
 <html>
     {% include head.html %}
     <body>
-        <div class="ui bottom attached segment pushable">
-            {% include sidebar.html%}
-            <div class="pusher">
-                {% include header.html %}
-                <div class="page-content">
-                    <div class="wrap">
-                        {{ content }}
-                    </div>
+        {% include sidebar.html%}
+        <div class="pusher">
+            {% include header.html %}
+            <div class="page-content">
+                <div class="wrap">
+                    {{ content }}
                 </div>
-                {% include footer.html %}
             </div>
+            {% include footer.html %}
         </div>
     </body>
 <script>
