@@ -2,9 +2,6 @@
 <html>
     {% include head.html %}
     <body>
-        <div class="ui visible left vertical sidebar menu">
-            {% include sidebar.html%}
-        </div>
         <div class="pusher">
             {% include header.html %}
             <div class="page-content">
@@ -17,7 +14,7 @@
     </body>
 <script>
     // 目录显示
-//    $('.vertical.sidebar').sidebar('show');
+    $('.vertical.sidebar').sidebar('dimPage', false).sidebar('show');
     // 目录搜索
 //    $('.ui.search').search();
     $('.ui.accordion').accordion({
