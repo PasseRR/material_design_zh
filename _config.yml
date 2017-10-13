@@ -19,5 +19,6 @@ redcarpet:
     - strikethrough
 gems:
   - redcarpet
+  - plantuml
 
 
