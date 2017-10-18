@@ -25,11 +25,14 @@
         showBorder: false,
         data: summary
     });
-
+    // 目录按钮
+    $(".ui.animated.button").click(function () {
+        $('.vertical.sidebar').sidebar('toggle');
+    });
     // 边栏
     $('.vertical.sidebar').sidebar('setting', {
         dimPage: false
-    }).sidebar('hidden');
+    }).sidebar('toggle');
 
     // 目录搜索
     $('.ui.search').search({
