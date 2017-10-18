@@ -17,7 +17,7 @@
     {% for item in site.data.summary %}
         summary.push({{ item | replace: "=>", ":" }});
     {% endfor %}
-    console.info(summary);
+
     // 菜单
     $('#summary').treeview({
         color: "#428bca",
@@ -32,7 +32,7 @@
     // 边栏
     $('.vertical.sidebar').sidebar('setting', {
         dimPage: false
-    }).sidebar('toggle');
+    });
 
     // 目录搜索
     $('.ui.search').search({
