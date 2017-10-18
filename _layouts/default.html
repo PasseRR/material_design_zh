@@ -15,7 +15,7 @@
 <script>
     var summary = [];
     {% for item in site.data.summary %}
-        summary.push({{ item }});
+        summary.push({{ item | replace: "=>", ":" }});
     {% endfor %}
     console.info(summary);
     // 菜单
