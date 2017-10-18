@@ -58,11 +58,11 @@
         color: "#428bca",
         enableLinks: true,
         showBorder: false,
-        expandIcon: 'plus icon', // 使用semantic图标代替
-        collapseIcon: 'minus icon',
+        expandIcon: 'glyphicon glyphicon-plus',
+        collapseIcon: 'glyphicon glyphicon-minus',
         data: summary
     });
-    console.info({{ site.data.summary }});
+
     // 边栏
     $('.vertical.sidebar').sidebar('setting', {dimPage: false})
             .sidebar('show');
