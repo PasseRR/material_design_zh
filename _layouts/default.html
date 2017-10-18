@@ -67,12 +67,12 @@
 
     // 目录搜索
     $('.ui.search').search({
-        source: $('#summary').treeview('getEnabled'),
+        source: $("#summary").treeview('getEnabled'),
         minCharacters: 2, // 最小搜索字符
         fields: {
-            title: 'text', // 结果标题
+            text: 'title', // 结果标题
 //            description: 'description', // 描述
-            url: 'href' // 跳转url
+            href: 'url' // 跳转url
         }
     });
 </script>
