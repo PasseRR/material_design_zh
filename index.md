@@ -22,6 +22,13 @@ public static void Main(String []agrs){
 }
 ```
 
+|属性名|属性值|
+|:---:|:---:|
+|INVALID_FIELD_OFFSET|-1|
+|ARRAY_BOOLEAN_BASE_OFFSET|Unsafe.arrayBaseOffset(boolean[].class)|
+|ARRAY_BYTE_BASE_OFFSET|Unsafe.arrayBaseOffset(byte[].class)|
+
+
 ## 参与者（按认领章节排序）
 
 - [iceskysl](https://github.com/iceskysl)  
