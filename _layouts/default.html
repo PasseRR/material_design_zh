@@ -61,15 +61,13 @@
         data: summary
     });
 
-    console.info($('#summary').treeview('getEnabled'));
-
     // 边栏
     $('.vertical.sidebar').sidebar('setting', {dimPage: false})
             .sidebar('show');
 
     // 目录搜索
     $('.ui.search').search({
-        source: summary,
+        source: $('#summary').treeview('getEnabled'),
         minCharacters: 2, // 最小搜索字符
         fields: {
             title: 'text', // 结果标题
