@@ -13,7 +13,7 @@
         </div>
     </body>
 <script>
-    var summary = '{{ site.data.summary }}';
+    var summary = $('meta[name="summary"]').attr("content");
     console.info(summary);
     // 菜单
     $('#summary').treeview({
