@@ -476,3 +476,7 @@ p img {
     padding: 5px 10px;
     text-align: center;
 }
+
+.glyphicon {
+    font-family: 'Glyphicons Halflings', serif;
+}
