@@ -27,7 +27,9 @@
     });
 
     // 边栏
-    $('.vertical.sidebar').sidebar('setting', {dimPage: false});
+    $('.vertical.sidebar').sidebar('setting', {
+        dimPage: false
+    }).sidebar('toggle');
 
     // 目录搜索
     $('.ui.search').search({
