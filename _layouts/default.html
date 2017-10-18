@@ -13,12 +13,39 @@
         </div>
     </body>
 <script>
-    // 目录显示
-    $("#summary").treemenu({delay: 200}).openActive();
     $('.vertical.sidebar').sidebar('setting', {dimPage: false})
             .sidebar('show');
     // 目录搜索
-//    $('.ui.search').search();
+    var content = [
+        {title: 'Andorra'},
+        {title: 'United Arab Emirates'},
+        {title: 'Afghanistan'},
+        {title: 'Antigua'},
+        {title: 'Anguilla'},
+        {title: 'Albania'},
+        {title: 'Armenia'},
+        {title: 'Netherlands Antilles'},
+        {title: 'Angola'},
+        {title: 'Argentina'},
+        {title: 'American Samoa'},
+        {title: 'Austria'},
+        {title: 'Australia'},
+        {title: 'Aruba'},
+        {title: 'Aland Islands'},
+        {title: 'Azerbaijan'},
+        {title: 'Bosnia'},
+        {title: 'Barbados'},
+        {title: 'Bangladesh'},
+        {title: 'Belgium'},
+        {title: 'Burkina Faso'},
+        {title: 'Bulgaria'},
+        {title: 'Bahrain'},
+        {title: 'Burundi'}
+        // etc
+    ];
+    $('.ui.search').search({
+        source: content
+    });
     $('.ui.accordion').accordion({
         selector: {
             trigger: '.title .icon'
