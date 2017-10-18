@@ -13,7 +13,7 @@
         </div>
     </body>
 <script>
-    var defaultData = [{
+    var summary = [{
         text: 'Parent 1',
         href: '#parent1',
         nodes: [
@@ -53,54 +53,26 @@
             href: '#parent5'
         }
     ];
+    // 菜单
     $('#summary').treeview({
         color: "#428bca",
         enableLinks: true,
         showBorder: false,
-        data: defaultData
+        data: summary
     });
+
+    // 边栏
     $('.vertical.sidebar').sidebar('setting', {dimPage: false})
             .sidebar('show');
+
     // 目录搜索
-    var content = [
-        {title: 'Andorra'},
-        {title: 'United Arab Emirates'},
-        {title: 'Afghanistan'},
-        {title: 'Antigua'},
-        {title: 'Anguilla'},
-        {title: 'Albania'},
-        {title: 'Armenia'},
-        {title: 'Netherlands Antilles'},
-        {title: 'Angola'},
-        {title: 'Argentina'},
-        {title: 'American Samoa'},
-        {title: 'Austria'},
-        {title: 'Australia'},
-        {title: 'Aruba'},
-        {title: 'Aland Islands'},
-        {title: 'Azerbaijan'},
-        {title: 'Bosnia'},
-        {title: 'Barbados'},
-        {title: 'Bangladesh'},
-        {title: 'Belgium'},
-        {title: 'Burkina Faso'},
-        {title: 'Bulgaria'},
-        {title: 'Bahrain'},
-        {title: 'Burundi'}
-        // etc
-    ];
     $('.ui.search').search({
-        source: content,
+        source: summary,
         minCharacters: 2, // 最小搜索字符
         fields: {
-            title: 'title', // 结果标题
-            description: 'description', // 描述
-            url: 'url' // 跳转url
-        }
-    });
-    $('.ui.accordion').accordion({
-        selector: {
-            trigger: '.title .icon'
+            title: 'text', // 结果标题
+//            description: 'description', // 描述
+            url: 'href' // 跳转url
         }
     });
 </script>
