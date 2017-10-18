@@ -13,7 +13,8 @@ table {
 table th {
     font-weight: 700;
     padding: 6px 13px;
-    border: 1px solid #ddd
+    background-color: darkgray;
+    border: 1px solid #ddd;
 }
 table tr {
     background-color: #fff;
