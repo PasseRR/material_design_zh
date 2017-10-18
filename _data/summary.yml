@@ -1,19 +1,19 @@
-- name: java
+- text: java
   href: java.html
   nodes:
-    - name: lang
+    - text: lang
       href: java.lang.html
-    - name: util
+    - text: util
       href: java.util.html
 
-- name: javax
+- text: javax
   href: javax.html
 
-- name: sun
+- text: sun
   href: sun.html
   nodes:
-    - name: misc
+    - text: misc
       href: sun.misc.html
       nodes:
-        - name: Unsafe
+        - text: Unsafe
           href: sun.misc.Unsafe.html
